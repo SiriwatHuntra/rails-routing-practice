@@ -81,7 +81,9 @@ class RouteRecognizer #Class define
         #if uri pattern match in /(.+)\?(.+)\Z/
       else                        # no query string
         @path = @uri
+        #set uri instance variable value to path instance variable 
         @query_string = nil
+        #set query_string to nil, no query string in uri
       end
     end
 
